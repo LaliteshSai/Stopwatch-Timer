@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <div class="container min-h-screen bg-teal-500 flex flex-col text-center">
+      <h1 class="text-6xl font-mono mt-7">Coundown Timer</h1>
+      <div class="flex flex-row justify-center mt-5">
+        <div
+          class="w-[25em] flex flex-row text-center justify-between mt-5 text-4xl p-3"
+        >
+          <label for="hours">
+            Hours:
+            <input
+              type="number"
+              id="hours"
+              min="0"
+              value="0"
+              max="24"
+              class="w-[4.3rem] focus:outline-none rounded-lg px-1"
+            />
+          </label>
+          <label for="minutes">
+            Minutes:
+            <input
+              type="number"
+              id="minutes"
+              min="0"
+              value="0"
+              max="60"
+              class="w-[4.3rem] focus:outline-none rounded-lg px-1"
+            />
+          </label>
+          <button
+            id="Start"
+            class="border-2 border-cyan-500 hover:border-cyan-800 text-lg bg-cyan-400 p-1 px-3 rounded-md"
+          >
+            Start
+          </button>
+          <button
+            id="Stop"
+            class="border-2 border-cyan-500 hover:border-cyan-800 text-lg bg-cyan-400 p-1 px-3 rounded-md"
+          >
+            Stop
+          </button>
+          <button
+            id="Continue"
+            class="border-2 border-cyan-500 hover:border-cyan-800 text-lg bg-cyan-400 p-1 px-3 rounded-md"
+          >
+            Continue
+          </button>
+          <button
+            id="Reset"
+            class="border-2 border-cyan-500 hover:border-cyan-800 text-lg bg-cyan-400 p-1 px-3 rounded-md"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+      <p id="timer" class="m-10  text-7xl text-black	">00:00:00</p>
+    </p >
+
+    <div>
+      <h1 class="text-6xl font-mono mt-5">Stop Watch</h1>
+      <div>
+
+      </div>
+    </div>
+      <p id="Timer" class="m-10  text-7xl text-black	">00:00:00</p>
+      <div>
+
+        <button id="WatchStart" class="border-2 border-cyan-500 hover:border-cyan-800 text-lg bg-cyan-400 p-1 px-3 rounded-md">Start</button>
+        <button id="WatchStop" class="border-2 border-cyan-500 hover:border-cyan-800 text-lg bg-cyan-400 p-1 px-3 rounded-md">Stop</button>
+        <button id="WatchReset" class="border-2 border-cyan-500 hover:border-cyan-800 text-lg bg-cyan-400 p-1 px-3 rounded-md">Reset</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./stopwatch.js"></script>
+  </body>
+</html>
+
